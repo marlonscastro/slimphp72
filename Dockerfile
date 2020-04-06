@@ -41,10 +41,11 @@ RUN locale-gen en_US.UTF-8 pt_BR.UTF-8
 
 COPY . /var/www/html/
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
+COPY ports.conf /etc/apache2/ports.conf
 
 RUN composer install 
 
-EXPOSE 80
+EXPOSE 8080
 # CMD ["php", "-S", "localhost:8080", "-t", "/var/www/html/", "index.php"]
 
 #ADD typo3.default.conf /etc/apache2/sites-enabled/000-default.conf
