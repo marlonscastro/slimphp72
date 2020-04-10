@@ -44,7 +44,7 @@ COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN composer install 
 
-EXPOSE 80
+EXPOSE 8080
 # CMD ["php", "-S", "localhost:8080", "-t", "/var/www/html/", "index.php"]
 
 #ADD typo3.default.conf /etc/apache2/sites-enabled/000-default.conf

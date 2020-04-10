@@ -12,7 +12,7 @@ $app = new \Slim\App(slimConfig());
 
 $app->get('/teste', function ($request, $response, $args) {
     return $response->withJson(array(
-        "teste" => "teste de rota"
+        "teste" => "teste de rota versão 10.04.2020"
     ),200);
 });
 
